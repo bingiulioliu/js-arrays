@@ -37,4 +37,13 @@ const isFabioPresent = teachers.indexOf('Fabio') > 0 ? true : false;
 console.log('2.4 ' + isFabioPresent);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+const teachersString = [];
+for (let i=0; i < teachers.length; i++) {
+  teachersString.push(teachers[i]);
+  
+  // if (i < teachers.length - 1) {   Mi ero dimenticato ci fosse già la virgola
+  //   teachersString.push(', ');
+  // }
+}
+const teacherVeryString = teachersString.toString();
+console.log('2.5 ' + teacherVeryString);
